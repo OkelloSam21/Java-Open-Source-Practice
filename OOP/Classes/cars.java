@@ -4,7 +4,7 @@ public class cars{
     private int year;
     private double price;
 
-    public Car(String make, String model, int year, double price) {
+    public cars(String make, String model, int year, double price) {
         this.make = make;
         this.model = model;
         this.year = year;
