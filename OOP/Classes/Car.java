@@ -1,64 +1,73 @@
 public class Car {
-    private String make;
-    private String model;
-    private int year;
-    private double price;
-    private Driver driver;
+	private String make;
+	private String model;
+	private int year;
+	private double price;
+	private Driver driver;
 
-    public Car(String make, String model, int year, double price, Driver driver) {
-        this.make = make;
-        this.model = model;
-        this.year = year;
-        this.price = price;
-        this.driver = driver;
-    }
+	public Car(String make, String model, int year, double price) {
+		this.make = make;
+		this.model = model;
+		this.year = year;
+		this.price = price;
+	}
 
-    public String getMake() {
-        return make;
-    }
+	public Car(String make, String model, int year, double price, Driver driver) {
+		this.make = make;
+		this.model = model;
+		this.year = year;
+		this.price = price;
+		this.driver = driver;
+	}
 
-    public String getModel() {
-        return model;
-    }
+	public String getMake() {
+		return make;
+	}
 
-    public int getYear() {
-        return year;
-    }
+	public String getModel() {
+		return model;
+	}
 
-    public double getPrice() {
-        return price;
-    }
+	public int getYear() {
+		return year;
+	}
 
-    public void setMake(String make) {
-        this.make = make;
-    }
+	public double getPrice() {
+		return price;
+	}
 
-    public void setModel(String model) {
-        this.model = model;
-    }
+	public void setMake(String make) {
+		this.make = make;
+	}
 
-    public void setYear(int year) {
-        this.year = year;
-    }
+	public void setModel(String model) {
+		this.model = model;
+	}
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
+	public void setYear(int year) {
+		this.year = year;
+	}
 
-    public Driver getDriver() {
-        return driver;
-    }
+	public void setPrice(double price) {
+		this.price = price;
+	}
 
-    public void setDriver(Driver driver) {
-        this.driver = driver;
-    }
+	public Driver getDriver() {
+		return driver;
+	}
 
-    public void displayInfo() {
-        System.out.println("Make: " + make);
-        System.out.println("Model: " + model);
-        System.out.println("Year: " + year);
-        System.out.println("Price: $" + price);
-        System.out.println("Driver: " );
-        driver.displayInfo();
-    }
+	public void setDriver(Driver driver) {
+		this.driver = driver;
+	}
+
+	public void displayInfo() {
+		System.out.println("Make: " + make);
+		System.out.println("Model: " + model);
+		System.out.println("Year: " + year);
+		System.out.println("Price: $" + price);
+		System.out.println("Driver: ");
+		if (driver != null) {
+			driver.displayInfo();
+		}
+	}
 }
