@@ -3,7 +3,7 @@ public class Car {
 	private String model;
 	private int year;
 	private double price;
-	private Driver driver;
+	private DriverDemo driverDemo;
 
 	public Car(String make, String model, int year, double price) {
 		this.make = make;
@@ -12,12 +12,12 @@ public class Car {
 		this.price = price;
 	}
 
-	public Car(String make, String model, int year, double price, Driver driver) {
+	public Car(String make, String model, int year, double price, DriverDemo driverDemo) {
 		this.make = make;
 		this.model = model;
 		this.year = year;
 		this.price = price;
-		this.driver = driver;
+		this.driverDemo = driverDemo;
 	}
 
 	public String getMake() {
@@ -52,12 +52,12 @@ public class Car {
 		this.price = price;
 	}
 
-	public Driver getDriver() {
-		return driver;
+	public DriverDemo getDriverDemo() {
+		return driverDemo;
 	}
 
-	public void setDriver(Driver driver) {
-		this.driver = driver;
+	public void setDriverDemo(DriverDemo driverDemo) {
+		this.driverDemo = driverDemo;
 	}
 
 	public void displayInfo() {
@@ -65,9 +65,9 @@ public class Car {
 		System.out.println("Model: " + model);
 		System.out.println("Year: " + year);
 		System.out.println("Price: $" + price);
-		System.out.println("Driver: ");
-		if (driver != null) {
-			driver.displayInfo();
+		System.out.println("DriverDemo: ");
+		if (driverDemo != null) {
+			driverDemo.displayInfo();
 		}
 	}
 }

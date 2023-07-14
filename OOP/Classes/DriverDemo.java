@@ -1,10 +1,10 @@
-public class Driver {
+public class DriverDemo {
 	private String name;
 	private String phoneNumber;
 	private String address;
 	private String dateOfBirth;
 
-	public Driver(String name, String phoneNumber, String address, String dateOfBirth) {
+	public DriverDemo(String name, String phoneNumber, String address, String dateOfBirth) {
 		this.name = name;
 		this.phoneNumber = phoneNumber;
 		this.address = address;
@@ -19,7 +19,7 @@ public class Driver {
 		this.name = name;
 	}
 
-	public Driver withName(String name) {
+	public DriverDemo withName(String name) {
 		this.name = name;
 		return this;
 	}
@@ -32,7 +32,7 @@ public class Driver {
 		this.phoneNumber = phoneNumber;
 	}
 
-	public Driver withPhoneNumber(String phoneNumber) {
+	public DriverDemo withPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 		return this;
 	}
@@ -45,7 +45,7 @@ public class Driver {
 		this.address = address;
 	}
 
-	public Driver withAddress(String address) {
+	public DriverDemo withAddress(String address) {
 		this.address = address;
 		return this;
 	}
@@ -58,7 +58,7 @@ public class Driver {
 		this.dateOfBirth = dateOfBirth;
 	}
 
-	public Driver withDateOfBirth(String dateOfBirth) {
+	public DriverDemo withDateOfBirth(String dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 		return this;
 	}
